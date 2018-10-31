@@ -29,8 +29,9 @@ These signals were used to estimate variables of the feature vector for each pat
 
 ================================================================================================================================
 Important Note : the measurements of the data base are the mean values for the following grouping combination - 
-each activity type & each subject of the experiment
-Each variable, except for activity.name and subject is an average of all observations including mean and standard deviation 
+each activity type & each subject of the experiment. Where activity names is the activity of the subject - laying, standing, etc.
+The subject is the numerical identifier for the expirementee under observation. Each variable, except for activity.name and subject is an average 
+of all observations including mean and standard deviation 
 ===========================================================================================================================
 
 There are a total of 88 variables... The following represent only core variable names, so that each suffix, e.g, mean, standard deviation,
