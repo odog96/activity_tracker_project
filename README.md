@@ -14,10 +14,8 @@ Via Opera Pia 11A, I-16145, Genoa, Italy.*
 activityrecognition@smartlab.ws
 www.smartlab.ws
 
-The objective of the excercise was to readin and tidy data from the 
-aforementioned experiment read from smartphones strapped to 30 subjects waist during various 
-activities. 
-reading data
+The objective of the excercise was to read in and tidy data from the aforementioned experiment using smartphones strapped to 30 subjects' waists during various activities. 
+##reading data##
 The following is a list and description of all files read-in to build out required tidy data set.
 The dataset spanned various files that included seperate:
 test data - all featureset data assigned to test set
