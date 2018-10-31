@@ -30,12 +30,12 @@ test data - all featureset data assigned to test set
                   corresponding training data set<br/>
 
 **Configuring initial dataset**
- Once the aforementioned files have been ingested, the dataframes are merged. To begin with two data frames - test.data and training.data - are built. For each data set i add the activity vector as well as subject vector. 
+ Once the aforementioned files have been ingested, the dataframes are merged. To begin with two data frames - test.data and training.data - are built. For each data set i add the activity vector as well as subject vector.<br/> 
  *Step 1 - Join test and trianing data.* 
  At this point I merge both data and test set into single data frame, using rbind (row binding command in r). 
  I then use the feature list (brought in as a dataframe) from .txt file and extract feature name list, which 
  I pass to the merged dataset ("combined.data")<br/>
- **Transform data**
+ **Transform data**<br/>
  *Step 2 - extract mean and standard deviation*
 This step requires extracting features/variables that are only means or standard deviations. For this, I use "grep" command
 and look at variable names that have either any of the  following words : Mean, mean, std. The new dataframe is subset to include
@@ -46,7 +46,7 @@ Using tidy pipe commands I joined this smaller dataframe with the prior "combine
 **Step 4 - add descriptive labels to variable names**
  Instead of using encoded variable names, this step required a more descriptive approach. I used exclusively the "gsub" command to 
  methodically remove and acronyms and replace with full names. Additionally all parenthesis were removed, all names were made to be lower case.<br/> 
- **Summarize and tidy data**
+ **Summarize and tidy data Step 5**
  The final step required averages for all measurement variables grouped by every activity and subject combination. Further the instructions required a tidy dataset be submitted. This can be found as the file titled tidy_combined_data.csv. One note worth
  mentioning: there were some discussions on the formum weather this summary was considered tidy or a further breakout of variables was required. My interpretation after reading this summary was that the "wide" format was indeed tidy. 
 
