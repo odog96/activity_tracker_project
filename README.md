@@ -1,7 +1,7 @@
 activity_tracker_project
 pull and tidy data for tracking
 
-==================================================================
+-----
  Oliver Zarate,  October 29, 2018 
  Coursera R Getting and Cleaning data Week 4, Data Course Project
  Reading & tidying data from:
