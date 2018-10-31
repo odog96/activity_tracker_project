@@ -5,7 +5,7 @@ Oliver Zarate,  October 29, 2018
 Coursera R Getting and Cleaning data Week 4, Data Course Project
 Reading & tidying data from:
 Human Activity Recognition Using Smartphones Data Set   
-==================================================================
+
 original data from :
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
@@ -13,12 +13,11 @@ DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
-==================================================================
 
 The objective of the excercise was to readin and tidy data from the 
 aforementioned experiment read from smartphones strapped to 30 subjects waist during various 
 activities. 
-====reading data=====
+reading data
 The following is a list and description of all files read-in to build out required tidy data set.
 The dataset spanned various files that included seperate:
 test data - all featureset data assigned to test set
@@ -32,7 +31,7 @@ test subject - single vector for numeric identifier of subject for test set. In 
 training subject - single vector for numeric identifier of subject for training set set. In same order as 
                   corresponding training data set
                   
-=====                  
+                  
                   
                   
 
