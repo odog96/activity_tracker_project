@@ -1,0 +1,84 @@
+==================================================================
+The source for this file was the: "Human Activity Recognition Using
+Smartphones Dataset" study. For further detail please see readme file
+===================================================================
+Description below is modified directly from the original 
+"features_info" file.
+==================================================================
+
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals time.accelerometer-(XYZ) and 
+time.gyroscope-(XYZ). These time domain signals (prefix 'time.') were captured at a constant rate of 50 Hz. Then they were filtered using
+a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration
+signal was then separated into body and gravity acceleration signals - (time.body.accelerometer-(XYZ) and time.gravity.accelerometer-(XYZ) 
+using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals 
+(time.body.accelerometer.jerk-XYZ and time.body.gyroscope.jerk-(XYZ). Also the magnitude of these three-dimensional signals were 
+calculated using the Euclidean norm (time.body.accelerometer.magnitude, time.gravity.accelerometer.magnitude,
+time.body.accelerometer.jerk.magnitude, time.body.gyroscope.magnitude-, time.body.gyroscope.jerk.magnitude). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing frequency.body.accelerometer.(xyz).axis,
+frequency.body.accelerometer.jerk-(xyz).axis, frequency.body.gyroscope.-(xyz).axis,frequency.body.accelerometer.jerk.Mag, 
+frequency.body.gyroscope.magnitude, frequency.body.gyroscope.jerk.magnitude. 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-(xyz).axis' is used to denote 3-axial signals in the X, Y and Z directions.
+
+================================================================================================================================
+Important Note : the measurements of the data base are the mean values for the following grouping combination - 
+each activity type & each subject of the experiment
+Each variable, except for activity.name and subject is an average of all observations including mean and standard deviation 
+===========================================================================================================================
+
+There are a total of 88 variables... The following represent only core variable names, so that each suffix, e.g, mean, standard deviation,
+x-axis, y-axis, & z-axis, creates an additional combination.
+
+activity.name
+subject
+time.body.accelerometer.(mean&standard_deviation)-(xyz).axis
+time.gravity.accelerometer.(mean&standard_deviation)-(xyz).axis
+time.body.accelerometer.jerk.(mean&standard_deviation)-(xyz).axis
+time.body.gyroscope.(mean&standard_deviation)-(xyz).axis
+time.body.gyroscope.jerk.(mean&standard_deviation)-(xyz).axis
+time.body.accelerometer.magnitude-(mean&standard_deviation)
+time.gravity.accelerometer.magnitude-(mean&standard_deviation)
+time.body.accelerometer.jerk.magnitude-(mean&standard_deviation)
+time.body.gyroscope.magnitude-(mean&standard_deviation)
+time.body.gyroscope.jerk.magnitude-(mean&standard_deviation)
+frequency.body.accelerometer.(mean&standard_deviation)-(xyz).axis
+frequency.body.accelerometer.(mean&standard_deviation).frequency-(xyz).axis
+frequency.body.accelerometer.jerk.(mean&standard_deviation)-(xyz).axis
+frequency.body.accelerometer.jerk.(mean&standard_deviation).frequency-(xyz).axis
+frequency.body.gyroscope.(mean&standard_deviation)-(xyz).axis
+frequency.body.gyroscope.(mean&standard_deviation).frequency-(xyz).axis
+frequency.body.accelerometer.magnitude-(mean&standard_deviation)
+frequency.body.accelerometer.magnitude-(mean&standard_deviation).frequency
+frequency.body.accelerometer.jerk.magnitude-(mean&standard_deviation)
+frequency.body.accelerometer.jerk.magnitude-(mean&standard_deviation).frequency
+frequency.body.gyroscope.magnitude-(mean&standard_deviation)
+frequency.body.gyroscope.magnitude-(mean&standard_deviation).frequency
+frequency.body.gyroscope.jerk.magnitude-(mean&standard_deviation)
+frequency.body.gyroscope.jerk.magnitude-(mean&standard_deviation).frequency
+angle_between:time.body.accelerometer.(mean&standard_deviation).&.gravity
+angle_between:time.body.accelerometer.jerk.(mean&standard_deviation).&.gravity.(mean&standard_deviation)
+angle_between:time.body.gyroscope.(mean&standard_deviation).&.gravity.(mean&standard_deviation)
+angle_between:time.body.gyroscope.jerk.(mean&standard_deviation).&.gravity.(mean&standard_deviation)
+angle_between:(xyz).axis.&.gravity.(mean&standard_deviation)
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+standard_deviation(): Standard deviation
+angle_between(): Angle between to vectors.
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle_between() variable:
+
+gravity.mean
+time.body.accelerometer.mean
+time.body.accelerometer.jerk.mean tBodyAccJerkMean
+time.body.gyroscope.mean
+time.body.gyroscope.jerk.meant
+
+The complete list of variables of each feature vector is available in 'features.txt'
